@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-top:5vh;
+    border-radius: 5px;
+    border: 1px lightgray solid;
+    box-shadow: 5px 5px 20px 5px lightslategray;
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin-top: 0;
+}
+
+#background{
+    border-radius: 5px;
+background: skyblue; /* url("./assets/sky.jpg") center/no-repeat; */
+
+height: 50%;
+}
+
+[type="text"]{
+    border-radius: 5px;
+
+}
