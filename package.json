@@ -2,15 +2,20 @@
   "name": "weatherApp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start:dev": "webpack-dev-server --mode development --content-base dist/ --open --hot  --config webpack.config.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "SendARaven",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }
