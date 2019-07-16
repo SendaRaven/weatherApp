@@ -1,11 +1,12 @@
 
 import { apiCall } from "./apiCall.js"
 
-const userInputField = document.querySelector('[placeholder="Please, enter city!"]');
+const btn = document.querySelector(".btn");
+console.log(btn);
 
-userInputField.addEventListener("click", () => {
+btn.addEventListener("click", () => {
   // const keyValue = event.key;
-  // console.log(event.key);
+  // console.log(event);
   // console.log(keyValue === "Enter");
 
   // if (event.keyCode === 13) {}

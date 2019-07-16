@@ -26,6 +26,17 @@ background: skyblue; /* url("./assets/sky.jpg") center/no-repeat; */
 
 height: 50%;
 }
+.inputbox{
+    text-align: center;
+}
+
+.btn{
+    margin-top: 1vh;
+    width: 97%;
+    border-radius: 5px;
+    border: 1px lightgray solid;
+    box-shadow: 1px 1px 2px lightgray;
+}
 
 [type="text"]{
     border-radius: 5px;
