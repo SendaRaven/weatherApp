@@ -20,7 +20,8 @@ h1{
 }
 
 #background{
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 background: skyblue; /* url("./assets/sky.jpg") center/no-repeat; */
 
 height: 50%;
@@ -28,5 +29,7 @@ height: 50%;
 
 [type="text"]{
     border-radius: 5px;
+    width: 95%;
+    padding-left: 2%
 
 }

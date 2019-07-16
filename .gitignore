@@ -1,2 +1,5 @@
 node_modules/
 config.js
+dist/main.js
+./main.js
+dist/main.js
