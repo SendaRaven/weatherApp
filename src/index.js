@@ -3,7 +3,7 @@ import { apiCallCurrent, apiCallForecast } from "./apiCall.js"
 
 
 const btn = document.querySelector(".btn");
-console.log(btn);
+//console.log(btn);
 
 btn.addEventListener("click", () => {
   // const keyValue = event.key;

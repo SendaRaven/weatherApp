@@ -2,7 +2,7 @@ import { config as key } from "./config.js";
 import { outputForecast, outputCurrent } from "./output";
 
 function apiCallCurrent(city) {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${key}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${key}`;
 
     fetch(url)
         .then(data => data.json())
@@ -15,7 +15,7 @@ function apiCallCurrent(city) {
 }
 
 function apiCallForecast(city) {
-    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=${key}`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=${key}`;
 
     fetch(url)
         .then(data => data.json())

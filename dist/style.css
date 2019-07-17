@@ -7,30 +7,47 @@ body{
     font-family: Verdana, Tahoma, sans-serif;
 }
 
-.container{
-    margin-top:5vh;
-    border-radius: 5px;
-    border: 1px lightgray solid;
-    box-shadow: 5px 5px 20px 5px lightslategray;
-    height: 50vh;
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-}
-
-h1{
-    margin-top: 0;
-}
-
 #background{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 background: skyblue; /* url("./assets/sky.jpg") center/no-repeat; */
 
-height: 50%;
+height: min-content;
 }
+
+.container{
+    margin-top:5vh;
+    border-radius: 5px;
+    border: 1px lightgray solid;
+    box-shadow: 5px 5px 20px 5px lightslategray;
+    height: max-content;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.innerContainer{
+display: flex;
+justify-content: space-around;
+align-items: flex-end
+}
+
+h1{
+  margin-top: 2px;
+  margin-left: 2%
+}
+
 .inputbox{
     text-align: center;
+    margin: 10px 0;
+}
+
+.forecastContainer{
+  display: flex;
+  justify-content: center;
+}
+th{
+  font-weight: 700;
 }
 
 .btn{
