@@ -16,21 +16,24 @@
             <h1 id="city">City Temperature</h1>
             <div class="innerContainer">
                 <p id="weatherData">Wind: <br>Humidity: <br> Weather Condition</p>
-                <p id="date"> Date, Time</p>
+                <div class="raggedRight">
+                    <img alt="weather icon" class="hidden">
+                    <p id="date"> Date, Time</p>
+                </div>
             </div>
             <div class="forecastContainer">
                 <table>
-                    
-                        <tr>
-                            <th></th>
-                            <th>5</th>
-                            <th>Day</th>
-                            <th>Weather</th>
-                            <th>Forcast</th>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                    
+
+                    <tr>
+                        <th></th>
+                        <th>5</th>
+                        <th>Day</th>
+                        <th>Weather</th>
+                        <th>Forcast</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+
                     <tr>
                         <th>Min</th>
                         <td></td>
@@ -55,15 +58,18 @@
         </div>
         <div class="inputbox">
             <form action="">
-                <input type="text" placeholder="Please, enter city!"><input type="button" value="Select City" class="btn">
+                <input type="text" placeholder="Please, enter city!"><input type="button" value="Select City"
+                    class="btn">
                 <!-- Rounded switch -->
 
             </form>
         </div>
     </div>
+
     <label class="switch">
-        <input type="checkbox">
+        <input type="checkbox" value="true">
         <span class="slider round"></span>
+        <div>C F</div>
     </label>
     <script src="main.js"></script>
 </body>
