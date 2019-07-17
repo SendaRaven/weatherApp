@@ -1,5 +1,6 @@
 
-import { apiCall } from "./apiCall.js"
+import { apiCallCurrent, apiCallForecast } from "./apiCall.js"
+
 
 const btn = document.querySelector(".btn");
 console.log(btn);
@@ -11,6 +12,7 @@ btn.addEventListener("click", () => {
 
   // if (event.keyCode === 13) {}
   let userInputFieldValue = document.querySelector('[placeholder="Please, enter city!"]').value;
-  console.log(userInputFieldValue);
-  apiCall(userInputFieldValue);
+  //console.log(userInputFieldValue);
+  apiCallCurrent(userInputFieldValue);
+  apiCallForecast(userInputFieldValue);
 })
