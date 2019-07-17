@@ -1,6 +1,7 @@
 
 import { apiCallCurrent, apiCallForecast } from "./apiCall.js"
-
+// let unitSwitchState = document.querySelector("input[type='checkbox']").value;
+// console.log(unitSwitchState);
 
 const btn = document.querySelector(".btn");
 //console.log(btn);
