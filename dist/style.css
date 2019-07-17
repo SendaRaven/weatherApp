@@ -1,7 +1,10 @@
 body{
     display: flex;
     justify-content: center;
+    position: relative;
+    
     box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 .container{
@@ -47,10 +50,11 @@ height: 50%;
 /* toggle switch*/
 .switch {
     margin-top: 5px;
-    position: relative;
+    position: absolute;
     display: inline-block;
     width: 50px;
     height: 24px;
+    right: 2vw;
   }
   
   /* Hide default HTML checkbox */
