@@ -24,13 +24,15 @@ function outputForecast(content) {
     let i = 0;
     let substrDate = Number(content.list[0].dt_txt.slice(8, 10));
 
-    while (i <= 6) {
-        let resultArray = [];
-        let result = content.list.filter(date => date.dt_txt.slice(8, 10) == substrDate)
-        console.log(result);
+    while (i <= 4) {
+        //let resultArray = [];
+        let result = content.list.filter(date => date.dt_txt.slice(8, 10) == substrDate);
+        let mapedResult = result.map(data => data.main.temp);
+        console.log(i, Math.min(...mapedResult), i, Math.max(...mapedResult))
+        //console.log(result);
         substrDate++;
         i++;
-
+        // result = [];
     }
 
 }
