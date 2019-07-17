@@ -72,6 +72,7 @@ th{
     width: 50px;
     height: 24px;
     right: 2vw;
+     
   }
   
   /* Hide default HTML checkbox */
@@ -92,25 +93,29 @@ th{
     background-color: rgba(204, 204, 204, 0.596);
     -webkit-transition: .4s;
     transition: .4s;
+    border: 4px lightgray;
+    border-style: inset
   }
   
   .slider:before {
     position: absolute;
     content: "";
-    height: 17px;
-    width: 18px;
-    left: 3.53px;
-    bottom: 4px;
+    height: 13px;
+    width: 13px;
+    left: 0.5px;
+    bottom: 0px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
+    border: 2px lightgray ridge;
+    box-shadow: 0.5px 0.5px 1px 1px lightslategray
   }
   
 
   input:checked + .slider:before {
-    -webkit-transform: translateX(25px);
-    -ms-transform: translateX(25px);
-    transform: translateX(25px);
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
   }
   
   /* Rounded sliders */

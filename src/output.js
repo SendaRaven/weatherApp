@@ -9,12 +9,20 @@ function outputCurrent(content) {
     Humidity: ${content.main.humidity}%
     ${content.weather[0].description}
     `;
-
 }
 
 function outputForecast(content) {
     console.log(content);
-
+    let i = 0;
+   let substrDate = content.list[0].dt_txt.slice(8,10);
+    // while (i<=6) {
+        
+        let result = content.list.filter(date => date.dt_txt.slice(8,10) == substrDate)
+        console.log(result);
+        
+        console.log("MIN:"+ Math.min(...result) + "MAX:"+ Math.min(...result));
+    // }
+    
 }
 
 function time() {
