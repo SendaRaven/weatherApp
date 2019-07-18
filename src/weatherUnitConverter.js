@@ -1,9 +1,10 @@
 function weatherUnitConverter(degrees) {
     let unitSwitchState = document.querySelector("input[type='checkbox']")
     //unitSwitchState.addEventListener("change",)
-    console.log(unitSwitchState);
 
-    if ((unitSwitchState.value || 0) == "true") {
+
+    if (unitSwitchState.checked) {
+        console.log(unitSwitchState.checked);
         return `${(degrees - 273.15).toFixed(1)}°C`;
     } else {
         return `${((degrees - 273.15) * (9 / 5) + 32).toFixed(1)} °F`;
