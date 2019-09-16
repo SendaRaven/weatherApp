@@ -1,7 +1,7 @@
 # Weather App
 
-1. How does it work?
-- It is a vanilla JavaScript application, which fetches via api data from OpenWeatherMap.org, processes the data and displays them for the search city inclusive a forecast for the next days.
+1. How does it work?   
+   It is a vanilla JavaScript application, which fetches via api data from OpenWeatherMap.org, processes the data and displays them for the searched city inclusive a forecast for the next days.
 2. Tech
 - Html
 - CSS
