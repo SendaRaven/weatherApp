@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="background">
+            <h1 id="city">City Temperature</h1>
+            <div class="innerContainer">
+                <p id="weatherData">Wind: <br>Humidity: <br> Weather Condition</p>
+                <div class="raggedRight">
+                    <img alt="weather icon" class="hidden">
+                    <p id="date"> Date, Time</p>
+                </div>
+            </div>
+            <div class="forecastContainer">
+                <table>
+
+                    <tr>
+                        <th></th>
+                        <th class="day">5</th>
+                        <th class="day">Day</th>
+                        <th class="day">Weather</th>
+                        <th class="day">Forcast</th>
+                        <th class="day"></th>
+                        <th class="day"></th>
+                    </tr>
+
+                    <tr>
+                        <th>Min</th>
+                        <td class="min"></td>
+                        <td class="min"></td>
+                        <td class="min"></td>
+                        <td class="min"></td>
+                        <td class="min"></td>
+                        <td class="min"></td>
+
+                    </tr>
+                    <tr>
+                        <th>Max</thq>
+                        <td class="max"></td>
+                        <td class="max"></td>
+                        <td class="max"></td>
+                        <td class="max"></td>
+                        <td class="max"></td>
+                        <td class="max"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="inputbox">
+            <form action="">
+                <input type="text" placeholder="Please, enter city!"><input type="button" value="Select City"
+                    class="btn">
+                <!-- Rounded switch -->
+
+            </form>
+        </div>
+    </div>
+
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+        <div>F C</div>
+    </label>
+    <script src="main.js"></script>
+</body>
+
+</html>
