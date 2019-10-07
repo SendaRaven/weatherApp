@@ -1,11 +1,12 @@
 import { weatherUnitConverter as converter } from "./weatherUnitConverter.js";
+import { weatherSwitch } from "./weatherUnitConverter.js";
 
 function outputCurrent(content) {
     console.log(content);
     const outputField = document.querySelector("h1");
     outputField.innerText = `${content.name},${content.sys.country} ${converter(content.main.temp)}`;
     console.log(content.main.temp);
-    
+
     const weatherData = document.querySelector("#weatherData");
     weatherData.innerText = `Wind: ${content.wind.speed} m/s
     Humidity: ${content.main.humidity}%
@@ -36,18 +37,18 @@ function outputForecast(content) {
         substrDate++;
         i++;
 
-    }     
-        //console.log(minArray);
-        //console.log(maxArray);
-        let minRow = document.getElementsByClassName("min");
-        let maxRow = document.getElementsByClassName("max");
-        //console.log(minRow);
-        
-        for (let i = 1; i < 5; i++) {
-            //console.log(minRow[0])
-            minRow[i].innerText = converter(minArray[i]);
-            maxRow[i].innerText = converter(maxArray[i]);
-        }
+    }
+    //console.log(minArray);
+    //console.log(maxArray);
+    let minRow = document.getElementsByClassName("min");
+    let maxRow = document.getElementsByClassName("max");
+    //console.log(minRow);
+
+    for (let i = 1; i < 5; i++) {
+        //console.log(minRow[0])
+        minRow[i].innerText = converter(minArray[i]);
+        maxRow[i].innerText = converter(maxArray[i]);
+    }
 }
 
 function time() {

@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
+  "hompage": ".",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start:dev": "webpack-dev-server --mode development --content-base dist/ --open --hot  --config webpack.config.js"
+    "start:dev": "webpack-dev-server --mode development --content-base dist/ --open --hot  --config webpack.config.js",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "SendARaven",
@@ -18,5 +20,8 @@
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
