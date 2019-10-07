@@ -1,65 +1,113 @@
-body{
+body {
     display: flex;
     justify-content: center;
-    position: relative;
-    
+    /* position: relative; */
     box-sizing: border-box;
     font-family: Verdana, Tahoma, sans-serif;
 }
 
-#background{
+#background {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-image: linear-gradient(to bottom, rgba(235,241,246,0.5) 0%,rgba(171,211,238,0.5) 50%,rgba(137,195,235,0.5) 51%,rgba(213,235,251,0.5) 100%), url("./sky-home.jpg");
+    background-image: linear-gradient(to bottom, rgba(235, 241, 246, 0.5) 0%, rgba(171, 211, 238, 0.5) 50%, rgba(137, 195, 235, 0.5) 51%, rgba(213, 235, 251, 0.5) 100%), url("./sky-home.jpg");
     height: min-content;
 }
 
-.container{
+.container {
     color: white;
-    margin-top:5vh;
+    margin-top: 5vh;
     border-radius: 5px;
     border: 1px lightgray solid;
     box-shadow: 5px 5px 20px 5px lightslategray;
     height: max-content;
-    width: 30vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
 
-.innerContainer{
+@media only screen and (min-width: 426px) {
+    .container {
+        width: 75vw
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 55vw
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 45vw
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        width: 30vw;
+        margin-right: 5vw;
+    }
+
+    body {
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .container {
+        width: 20vw;
+        margin-right: 2vw;
+    }
+
+    body {
+        justify-content: flex-end;
+    }
+}
+
+.innerContainer {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
 }
 
-h1{
+h1 {
     margin-top: 2px;
     margin-bottom: 2px;
     margin-left: 2%
 }
-.hidden{
-  visibility: hidden; 
-}
-#date{
-  margin-top: 0;
+
+.hidden {
+    visibility: hidden;
 }
 
-.raggedRight{
+#date {
+    margin-top: 0;
+}
+
+.raggedRight {
     text-align: right;
 }
 
-.forecastContainer{
+.forecastContainer {
     display: flex;
     justify-content: center;
 }
-th{
+
+.forcastContainer-table {
+    width: 100%;
+}
+
+th {
     font-weight: 700;
 }
-.inputbox{
+
+.inputbox {
     text-align: center;
     margin: 10px 0;
 }
-.btn{
+
+.btn {
     background-color: white;
     margin-top: 1vh;
     width: 97%;
@@ -70,21 +118,23 @@ th{
     font-weight: 700;
     color: rgb(53, 53, 53);
 }
-.btn:active{
+
+.btn:active {
     border: 2px lightgray groove;
 }
 
 
-[type="text"]{
+[type="text"] {
     border-radius: 5px;
     width: 95%;
     padding-left: 2%;
     color: rgb(53, 53, 53)
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
+
 /* toggle switch*/
 
 .switch {
@@ -94,16 +144,16 @@ input:focus{
     width: 50px;
     height: 24px;
     right: 2vw;
-     
-  }
-  
+
+}
+
 /* Hide default HTML checkbox */
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
+}
+
 /* The slider */
 .slider {
     position: absolute;
@@ -134,7 +184,7 @@ input:focus{
 }
 
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     -webkit-transform: translateX(22px);
     -ms-transform: translateX(22px);
     transform: translateX(22px);
